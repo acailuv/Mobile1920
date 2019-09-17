@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meeting04 - FindingGame</string>
+
+    <string name="instruction_title">How to play:</string>
+    <string name="instruction_body">Tap the boxes and find the shining star!</string>
+
+    <string name="button_red">RED</string>
+    <string name="button_yellow">YELLOW</string>
+    <string name="button_green">GREEN</string>
+</resources>

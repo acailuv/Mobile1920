@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Meeting05 - Lightborne</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_title">Lightborne</string>
+    <string name="start_button_text">Start</string>
+    <string name="how_to_play">How to play</string>
+    <string name="how_to_play_body">
+        Hello traveller, welcome to the adventure of Lightborne.
+        In this magical journey you have to make tough choices and try to get the best possible ending.
+        There is an introduction of how you actually play every time you start the game.
+        You can see your unlocked endings at the main menu (look at the upper left corner of the screen).
+        The endings will be reset every time you launch this application.
+    </string>
+    <string name="action_button_text">Action!</string>
+    <string name="unlocked_endings">Unlocked Endings</string>
+    <string name="ending_one">You Left Them Alone</string>
+    <string name="ending_two">You Ignored Them?!</string>
+    <string name="normal_ending_one">Peace?</string>
+    <string name="normal_ending_two">Warrior of Light\'s Sacrifice</string>
+    <string name="best_ending">Happily Ever After</string>
+    <string name="ending_three">World Enslavement</string>
+    <string name="ending_four">World Enslavement II</string>
+</resources>

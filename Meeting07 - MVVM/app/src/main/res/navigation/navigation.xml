@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenu">
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.github.acailuv.meeting07_mvvm.screens.mainmenu.MainMenu"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_howToPlay"
+            app:destination="@id/howToPlay" />
+        <action
+            android:id="@+id/action_mainMenu_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/howToPlay"
+        android:name="com.github.acailuv.meeting07_mvvm.screens.howtoplay.HowToPlay"
+        android:label="How To Play"
+        tools:layout="@layout/fragment_how_to_play" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.github.acailuv.meeting07_mvvm.screens.game.GameFragment"
+        android:label="The Adventure of Lightborne"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/endingsFragment"
+        android:name="com.github.acailuv.meeting07_mvvm.screens.ending.EndingsFragment"
+        android:label="Unlocked Endings"
+        tools:layout="@layout/fragment_endings" >
+        <action
+            android:id="@+id/action_endingsFragment_to_endingDisplay"
+            app:destination="@id/endingDisplay" />
+    </fragment>
+    <fragment
+        android:id="@+id/endingDisplay"
+        android:name="com.github.acailuv.meeting07_mvvm.screens.ending.EndingDisplay"
+        android:label="View Ending"
+        tools:layout="@layout/fragment_ending_display" />
+</navigation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewMargin">64dp</dimen>
+    <dimen name="headerTextSize">24sp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="padding">32dp</dimen>
+</resources>

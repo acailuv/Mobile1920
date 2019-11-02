@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".movieupdate.MovieUpdateFragment">
+
+    <data>
+
+        <variable
+            name="movieUpdateViewModel"
+            type="com.github.acailuv.meeting08_trackmymoviequality.movieupdate.MovieUpdateViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_a_movie"
+            android:textSize="@dimen/headerTextSize"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/margin"/>
+
+        <EditText
+            android:id="@+id/movie_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_key_no_html"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_name_no_html"
+            android:inputType="text"/>
+
+        <RatingBar
+            android:id="@+id/movie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="@dimen/margin" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_a_movie"
+            android:onClick="@{(view) -> movieUpdateViewModel.onUpdateMovie(movieKey, movieName, movieRating)}"/>
+
+    </LinearLayout>
+
+</layout>

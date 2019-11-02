@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieTrackerFragment">
+
+    <fragment
+        android:id="@+id/movieTrackerFragment"
+        android:name="com.github.acailuv.meeting08_trackmymoviequality.movietracker.MovieTrackerFragment"
+        android:label="@string/movie_tracker"
+        tools:layout="@layout/fragment_movie_tracker" >
+        <action
+            android:id="@+id/action_movieTrackerFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_movieTrackerFragment_to_movieUpdateFragment"
+            app:destination="@id/movieUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.github.acailuv.meeting08_trackmymoviequality.moviedetails.MovieDetailsFragment"
+        android:label="@string/movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <argument
+            android:name="movieKey"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_movieTrackerFragment"
+            app:destination="@id/movieTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieUpdateFragment"
+        android:name="com.github.acailuv.meeting08_trackmymoviequality.movieupdate.MovieUpdateFragment"
+        android:label="fragment_movie_update"
+        tools:layout="@layout/fragment_movie_update" >
+        <action
+            android:id="@+id/action_movieUpdateFragment_to_movieTrackerFragment"
+            app:destination="@id/movieTrackerFragment" />
+    </fragment>
+</navigation>

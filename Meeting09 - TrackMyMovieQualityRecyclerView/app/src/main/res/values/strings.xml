@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Meeting09 - TrackMyMovieQualityRecyclerView</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_tracker">Movie Tracker</string>
+    <string name="add_a_movie">Add A Movie</string>
+    <string name="clear">clear</string>
+
+    <!--  Rating Strings  -->
+    <string name="how_was_hour_sleep">How was the movie?</string>
+    <string name="zero_very_bad">Disgusting</string>
+    <string name="one_poor">Eww</string>
+    <string name="two_soso">Meh</string>
+    <string name="four_pretty_good">Pretty good</string>
+    <string name="five_excellent">Perfect!</string>
+
+    <!-- Output to TextView styled with a little HTML -->
+    <string name="title"><![CDATA[<h3>HERE IS YOUR MOVIE DATA</h3>]]></string>
+    <string name="movie_key"><![CDATA[<b>Movie Key:</b>]]></string>
+    <string name="movie_name"><![CDATA[<b>Movie Name:</b>]]></string>
+    <string name="quality"><![CDATA[<b>Quality:</b>]]></string>
+    <string name="rating">Rating</string>
+    <string name="movie_name_no_html">Movie Title</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="update_a_movie">Update a Movie</string>
+    <string name="movie_key_no_html">Movie Key</string>
+    <string name="review">Review..</string>
+
+</resources>
